@@ -29,7 +29,7 @@ const Hero = () => {
               </h2>
               <TextGenerateEffect
                 words="Elevate your brand with a dynamic web experience"
-                className="text-center text-[60px] md:text-5xl lg:text-6xl"
+                className="text-center text-4xl md:text-5xl lg:text-6xl"
               />
 
               <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl animate-opacity delay-150">

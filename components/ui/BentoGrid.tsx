@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./bg-gradient-animation";
 import { GlobeDemo } from "./GridGlobe";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
-import Lottie from "lottie-react";
+// import animationData from "@/data/confetti.json";
+// import Lottie from "lottie-react";
 import { IoCopyOutline } from "react-icons/io5";
 import MagicButton from "./MagicButton";
 
@@ -83,6 +83,7 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               src={spareImg}
               alt={spareImg}
@@ -113,8 +114,8 @@ export const BentoGridItem = ({
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 lg:gap-8">
-                {["React.js", "Next.js", "Framer"].map((tech) => (
+              <div className="flex flex-col gap-1.5 lg:gap-4">
+                {["React.js", "Next.js", "MongoDB", "Node.js"].map((tech) => (
                   <span
                     key={tech}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]"
@@ -124,9 +125,9 @@ export const BentoGridItem = ({
                 ))}
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
               </div>
-              <div className="flex flex-col gap-3 lg:gap-8">
+              <div className="flex flex-col gap-1.5 lg:gap-4">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
-                {["Javascript", "Python", "Typescript"].map((tech) => (
+                {["Javascript", "Python", "Typescript", "SQL"].map((tech) => (
                   <span
                     key={tech}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-80 rounded-lg text-center bg-[#10132E]"
