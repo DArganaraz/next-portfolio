@@ -1,6 +1,1 @@
-export default {
-  reactStrictMode: true,
-  experimental: {
-    forceSwcTransforms: true,
-  },
-};
+export default {};
